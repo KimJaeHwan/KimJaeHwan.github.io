@@ -22,7 +22,7 @@ categories:
 ------
 
 - docker는 [dockerhub](https://hub.docker.com/)에서 각종 이미지들을 관리하고 있으며 해당 사이트에서 원하는 이미지를 가져올 수 있다.
-- <code># docker search <image name></code>
+- <code># docker search &lt;image Name&gt;</code>
 
 
 
@@ -30,8 +30,8 @@ categories:
 
 ------
 
-- <code># docker pull <image name></code>
-- <code># docker search <image name>:<tag></code> 
+- <code># docker pull &lt;image Name&gt;</code>
+- <code># docker search &lt;image Name&gt;:<tag></code> 
 
 
 
@@ -49,7 +49,7 @@ categories:
 
 이미지 제거시 해당 이미지로 run한 모든 컨테이너들이 삭제 되어있어야한다.
 
-- <code># docker rmi <image ID></code>
+- <code># docker rmi &lt;image ID&gt;</code>
 
 
 
@@ -59,7 +59,7 @@ categories:
 
 docker container를 사용하기 위해서는 사용하고자하는 docker image와 그에 맞는 적절한 옵션을 넣어주어야 한다.
 
-- <code># docker run <image ID> <option> </code>
+- <code># docker run &lt;image ID&gt; &lt;option&gt; </code>
 
 #### Ex)
 
@@ -76,7 +76,7 @@ docker container를 사용하기 위해서는 사용하고자하는 docker image
 
 현재 가지고 있는 이미지를 .tar형식으로 저장하여 공유및 관리할수 있다.
 
-- <code># docker save -o <image.tar> <image ID></code>
+- <code># docker save -o &lt;image.tar&gt; &lt;image ID&gt;</code>
 
 
 
@@ -86,7 +86,7 @@ docker container를 사용하기 위해서는 사용하고자하는 docker image
 
 save명령어로 저장된 tar파일들을 다시 docker 이미지로 로드할 수 있다.
 
-- <code># docker load -i <image.tar></code>
+- <code># docker load -i &lt;image.tar&gt;</code>
 
 
 
@@ -109,15 +109,15 @@ save명령어로 저장된 tar파일들을 다시 docker 이미지로 로드할 
 
 ------
 
-- <code># docker start <container ID> </code>
-- <code># docker start <container Name> </code>
+- <code># docker start &lt;container ID&gt; </code>
+- <code># docker start &lt;container Name&gt; </code>
 
 ### docker 컨테이너 종료
 
 ------
 
-- <code># docker stop <container ID></code>
-- <code># docker stop <container Name></code>
+- <code># docker stop &lt;container ID&gt;</code>
+- <code># docker stop &lt;container Name&gt;</code>
 
 
 
@@ -129,7 +129,7 @@ save명령어로 저장된 tar파일들을 다시 docker 이미지로 로드할 
 
 tag에는 자신이 원하는 버전을 작성할 수 있으며 tag를 사용하지 않는 경우  기본적으로 latest로 붙게 된다.
 
-- <code># docker commit <container ID> <image Name>:<tag></code> 
+- <code># docker commit &lt;container ID&gt; &lt;image Name&gt;:<tag></code> 
 
   
 
@@ -171,4 +171,4 @@ docker hub에 업로드를 하기 위해서는 계정이 필요하며 이는 [do
 
 docker 이미지를 업로드하기 위해서는 push명령어를 사용하며 이떄 로그인한 자신 ID를  넣어주어야 정상적으로 업로드된다.
 
-- <code># docker image push <account>/<image name></code>
+- <code># docker image push &lt;account&gt;/&lt;image Name&gt;</code>
