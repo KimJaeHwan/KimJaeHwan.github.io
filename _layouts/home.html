@@ -19,5 +19,9 @@ layout: archive
   {% endfor %}
 </div>
 
+{% for category in site.categories %}
+  {{ category | first}}
+  {{ category | last}}
+{%endfor%}
 
 {% include paginator.html %}
