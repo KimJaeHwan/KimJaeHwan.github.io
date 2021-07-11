@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "docker 이미지 관리"
+title: "docker 기본 명령어 정리"
 
 categories: ['docker']
 ---
